@@ -2,8 +2,7 @@ package main
 
 import (
 	"fmt"
-
-	"github.com/google/uuid"
+	"go-code-snippets/packages/car"
 )
 
 // 1 - go mod init go-course/packages
@@ -12,6 +11,7 @@ import (
 
 func main() {
 
-	fmt.Println(uuid.NewUUID())
-
+	// fmt.Println(uuid.NewUUID())
+	c := car.Car{Name: "Corola", Color: "Blue"}
+	fmt.Println(c.GetColor())
 }

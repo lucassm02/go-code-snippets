@@ -1,13 +1,14 @@
 package main
 
 import (
-	"go-course/visibility/util"
+	"fmt"
+	"go-code-snippets/visibility/helper"
 )
 
 func main() {
 
-	println(util.VisibleValue)
-	util.FuncVisible()
-	// println(util.invisibleValue) not available
+	fmt.Println(helper.VisibleValue)
+	helper.FuncVisible()
+	// println(helper.invisibleValue) not available
 
 }
